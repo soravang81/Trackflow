@@ -1,5 +1,0 @@
-import AuthForm from '@/components/authForm';
-
-export default function VendorLogin() {
-  return <AuthForm role="vendor" type="signup" />;
-}
