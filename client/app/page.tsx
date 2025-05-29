@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { MapPin, Users, Truck, ShoppingBag, ArrowRight, CheckCircle, Star, Menu, X } from 'lucide-react';
 
 export default function TrackFlowLanding() {
@@ -39,7 +39,7 @@ export default function TrackFlowLanding() {
     }
   ];
 
-  const currentRole = roles.find(role => role.id === activeRole);
+  const currentRole = roles.find(role => role.id === activeRole) || roles[0];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-800 text-white">
@@ -105,7 +105,7 @@ export default function TrackFlowLanding() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <button 
-              onClick={() => document.getElementById('roles').scrollIntoView({behavior: 'smooth'})}
+              onClick={() => document.getElementById('roles')!.scrollIntoView({behavior: 'smooth'})}
               className="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-blue-500/25 transition-all transform hover:scale-105"
             >
               Choose Your Role & Login

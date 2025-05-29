@@ -1,8 +1,7 @@
 'use client';
 
-import { getSession, useSession } from 'next-auth/react';
+import { useSession } from 'next-auth/react';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import api, { setAuthToken } from '@/utils/api';
 import { Order } from '@prisma/client';
