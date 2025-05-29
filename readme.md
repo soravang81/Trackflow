@@ -32,10 +32,7 @@
 
 ---
 
-### 📄 `README.md` Template
-
-````md
-# 🛵 Real-Time Delivery Tracker
+### 🛵 Real-Time Delivery Tracker
 
 A full-stack multivendor real-time delivery tracker inspired by Rapido/Dunzo.
 
@@ -76,7 +73,6 @@ A full-stack multivendor real-time delivery tracker inspired by Rapido/Dunzo.
    |                    |     (every 3s via WS)  |
    |<------ Assign Order via REST ---------------|
    |<---------------- Real-time Tracking --------|
-````
 
 * Backend pushes updates via **WebSocket (Socket.IO)**
 * Frontend subscribes to **order room** to get live location
